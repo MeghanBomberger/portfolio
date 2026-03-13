@@ -46,7 +46,9 @@
 				position: relative;
 				margin: 0 0 0 0;
 				height: calc(27vw);
+        max-height: 270pt;
 				width: 45vw;
+        max-width: 450pt;
 				border-radius: calc(1vw);
 				background-color: black;
 
@@ -57,7 +59,9 @@
 
 				.desktop-screen {
 					height: calc(25vw);
+          max-height: 250pt;
 					width: 40vw;
+          max-width: 400pt;
 					border-radius: calc(0.5vw);
 					background-size: cover;
 					background-repeat: no-repeat;
@@ -73,7 +77,9 @@
 					position: absolute;
 					bottom: -7%;
 					height: calc(2vw);
+          max-height: 20pt;
 					width: 5vw;
+          max-width: 50pt;
 					background-color: black;
 
 					@include tablet-and-smaller{
@@ -87,7 +93,9 @@
 					position: absolute;
 					bottom: -10%;
 					height: calc(1.5vw);
+          max-height: 15pt;
 					width: 10vw;
+          max-width: 100pt;
 					border-radius: 50%;
 					background-color: black;
 
@@ -106,7 +114,9 @@
 				grid-template-rows: calc(2vw) auto calc(3vw);
 				margin: calc(17.5vw) 0 0 -8vw;
 				height: calc(21vw);
+        max-height: 210pt;
 				width: 10vw;
+        max-width: 100pt;
 				border-radius: calc(1vw);
 				background-color: black;
 				box-shadow: inset rgba(255, 255, 255, 0.4) 1px 1px 3px;
@@ -124,7 +134,9 @@
 					align-self: center;
 					justify-self: center;
 					height: calc(1vw);
+          max-height: 10pt;
 					width: 1vw;
+          max-width: 10pt;
 					border-radius: 50%;
 					background-color: $darkest-gray;
 
@@ -137,7 +149,9 @@
 				.phone-screen {
 					grid-row: 2;
 					height: calc(16vw);
+          max-height: 160pt;
 					width: 8.5vw;
+          max-width: 85pt;
 					background-size: cover;
 					background-position: center;
 					background-repeat: no-repeat;
@@ -155,7 +169,9 @@
 					align-self: center;
 					justify-self: center;
 					height: calc(2vw);
+          max-height: 20pt;
 					width: 2vw;
+          max-width: 20pt;
 					border-radius: 50%;
 					background-color: $dark-gray;
 
