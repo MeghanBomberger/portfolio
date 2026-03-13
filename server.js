@@ -13,6 +13,7 @@ const server = express()
 
 const whitelist = [
 	'localhost:3000',
+	'localhost:4000',
 	'localhost:8080',
 	'meghan-bomberger-portfolio.herokuapp.com',
 	'meghanbomberger.dev',
@@ -22,19 +23,24 @@ const whitelist = [
 
 const corsOptions = {
 	origin: function (origin, callback) {
-		console.log("** Origin of request " + origin.headers.host)
-		if (whitelist.indexOf(origin.headers.host) !== -1 || !origin) {
+		if (!origin) {
+			callback(null, true)
+			return
+		}
+		const host = new URL(origin).host
+		console.log("** Origin of request " + host)
+		if (whitelist.indexOf(host) !== -1) {
 			console.log("Origin acceptable")
 			callback(null, true)
 		} else {
 			console.log("Origin rejected")
-			callback(new Error('Not allowed by CORS - ' + origin.headers.host))
+			callback(new Error('Not allowed by CORS - ' + host))
 		}
 	}
 }
 
 server.use(express.json())
-server.use(cors(corsOptions.origin))
+server.use(cors(corsOptions))
 server.use(serveStatic(__dirname + '/client/build'))
 
 server.get("/api", (req, res) => {

@@ -15,20 +15,16 @@ export default function Skills ({skills}) {
 				skills={skills.filter(skill => skill.category === "library or framework")}
 			/>
 			<SkillsList
-				title="Hosting Services"
-				skills={skills.filter(skill => skill.category === "hosting service")}
+				title="Tools and Platforms"
+				skills={skills.filter(skill => skill.category === "tools and platforms")}
 			/>
 			<SkillsList
-				title="Softwares and Services"
-				skills={skills.filter(skill => skill.category === "software or service")}
+				title="Software"
+				skills={skills.filter(skill => skill.category === "software")}
 			/>
 			<SkillsList
 				title="eCommerce Platforms"
 				skills={skills.filter(skill => skill.category === "eCommerce platform")}
-			/>
-			<SkillsList
-				title="OS"
-				skills={skills.filter(skill => skill.category === "OS")}
 			/>
 			<SkillsList
 				title="Additional Skills"
