@@ -1,6 +1,6 @@
 const express = require('express')
 const Airtable = require('airtable')
-const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE)
+const base = new Airtable({ apiKey: process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN }).base(process.env.AIRTABLE_BASE)
 
 const projectsRouter = express.Router()
 
