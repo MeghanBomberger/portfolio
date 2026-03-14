@@ -19,6 +19,7 @@ export interface Project {
     skill_icon: string
   }[],
   repo: string
+  wake_up: boolean
 }
 
 export interface AirtableAttachment {
@@ -39,6 +40,7 @@ export interface AirtableProjectFields {
   url: string
   repo: string
   contributor: boolean
+  wake_up: boolean
 }
 
 export interface AirtableSkillFields {

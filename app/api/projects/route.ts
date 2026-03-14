@@ -26,7 +26,8 @@ export async function GET() {
             description: fields.description,
             url: fields.url,
             repo: fields.repo,
-            contributor: fields.contributor
+            contributor: fields.contributor,
+            wake_up: fields.wake_up || false
           }
         })
 

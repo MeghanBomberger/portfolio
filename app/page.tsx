@@ -47,8 +47,8 @@ export default function Home() {
 
   useEffect(() => {
     if (personalProjects.length > 0) {
-      personalProjects.forEach((project: { url: string }) => {
-        if (project.url) {
+      personalProjects.forEach((project: { url: string, wake_up?: boolean }) => {
+        if (project.url && project?.wake_up) {
           fetch(`${project.url}/hello`)
         }
       })
