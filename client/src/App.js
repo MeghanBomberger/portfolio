@@ -9,7 +9,10 @@ import Nav from './components/Nav'
 import Projects from './components/projects/Projects'
 import Skills from './components/skills/Skills'
 
-export const baseURL = process.env.REACT_APP_IS_PRODUCTION ? 'https://meghan-bomberger-portfolio.herokuapp.com/api' : 'http://localhost:4000/api'
+export const baseURL =
+  process.env.NODE_ENV === 'production'
+    ? 'https://your-vercel-app.vercel.app/api' // Replace with your actual Vercel domain
+    : 'http://localhost:4000/api';
 
 export default function App () {
   const [message, setMessage] = useState("")
