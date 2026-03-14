@@ -196,21 +196,21 @@
 			margin: 0 7.5% 2rem 7.5%;
 			width: 85%;
 			@include font-two;
-			font-size: 2.5rem;
+			font-size: 1.5rem;
 			text-align: center;
 			text-transform: uppercase;
 			text-shadow: $darkest-gray 1px 1px 3px;
 
       @include desktop-only {
         text-align: center;
-        font-size: 2.75rem;
+        font-size: 2.25rem;
       }
 		}
 
 		.project-description {
 			margin: 3rem 10% 5rem 10%;
 			width: 80%;
-			font-size: 2rem;
+			font-size: 1.375rem;
 			text-align: center;
 			line-height: 150%;
 		}

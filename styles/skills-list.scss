@@ -16,7 +16,7 @@
 	h3 {
 		margin-bottom: 1rem;
 		@include font-two;
-		font-size: 3rem;
+		font-size: 2.35rem;
 		text-transform: uppercase;
 
 		@media screen and (max-width: 565px) {
@@ -27,7 +27,7 @@
 	.icons-container {
 		@include center-h;
 		flex-wrap: wrap;
-		padding: rem;
+		padding: 1rem;
     max-width: 75rem;
     margin-bottom: 3rem;
 
