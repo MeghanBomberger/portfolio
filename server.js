@@ -5,9 +5,9 @@ const express = require('express')
 const path = require('path')
 const serveStatic = require('serve-static')
 
-const messageRouter = require('./routes/MessageRouter')
-const projectsRouter = require('./routes/ProjectsRouter')
-const skillsRouter = require('./routes/SkillsRouter')
+const messageRouter = require('./api/messages')
+const projectsRouter = require('./api/projects')
+const skillsRouter = require('./api/skills')
 
 const server = express()
 
