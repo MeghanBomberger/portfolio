@@ -23,6 +23,20 @@ export default function Home() {
         <section id="hero" className="element">
           <Hero />
         </section>
+
+        <Nav/>
+
+        <About/>
+
+        {(personalProjects.length > 0 || contributorProjects.length > 0) && (
+          <Projects/>
+        )}
+
+        {skills.length > 0 && (
+          <Skills/>
+        )}
+
+        <Footer/>
       </main>
     </>
   );

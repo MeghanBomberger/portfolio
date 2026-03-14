@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 
 @mixin font-one {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Kode Mono', monospace;
 }
 
 @mixin font-two {
 	font-family: 'Roboto Mono', monospace;
+}
+
+@mixin font-three {
+  font-family: 'Homemade Apple', cursive;
 }
 
 $light-text: rgba(255, 255, 255, 0.75);
