@@ -1,3 +1,4 @@
+import '@styles/projects.scss';
 import { Project } from "@/utils/types"
 import ProjectCard from "./ProjectCard"
 

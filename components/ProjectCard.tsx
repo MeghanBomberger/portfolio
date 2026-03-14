@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import { githubIcon } from '@lib/assets';
+
 import '@styles/project-card.scss';
+import { githubIcon } from '@lib/assets';
 import { Project } from '@utils/types';
 
 const iconSize = 30

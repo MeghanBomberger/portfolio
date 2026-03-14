@@ -1,3 +1,10 @@
+export interface Skill {
+  id: string,
+  skill: string,
+  icon: string,
+  category: string
+}
+
 export interface Project {
   id: number,
   url: string,

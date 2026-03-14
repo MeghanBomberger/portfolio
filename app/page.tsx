@@ -10,12 +10,13 @@ import About from '../components/About';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import Footer from '../components/Footer';
+import { Project, Skill } from '@/utils/types';
 
 export default function Home() {
   const [message, setMessage] = useState("")
-  const [personalProjects, setPersonalProjects] = useState([])
-  const [contributorProjects, setContributorProjects] = useState([])
-  const [skills, setSkills] = useState([])
+  const [personalProjects, setPersonalProjects] = useState<Project[]>([])
+  const [contributorProjects, setContributorProjects] = useState<Project[]>([])
+  const [skills, setSkills] = useState<Skill[]>([])
 
   console.info("message: ", message) // TODO: temporary console log to suppress unused variable warning. Will be used in future update to display error message to user.
 
@@ -75,7 +76,7 @@ export default function Home() {
         )}
 
         {skills.length > 0 && (
-          <Skills />
+          <Skills skills={skills} />
         )}
 
         <Footer />
