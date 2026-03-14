@@ -120,7 +120,6 @@
 				border-radius: calc(1vw);
 				background-color: black;
 				box-shadow: inset rgba(255, 255, 255, 0.4) 1px 1px 3px;
-				transform: rotate(10deg);
 
 				@include tablet-and-smaller {
 					height: calc(30.33vw);

@@ -16,16 +16,34 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <a href={project.url}>
         <div className="project-example">
           <div className="project-examples">
-            <div className="desktop-example">
-              <div className="desktop-screen" style={{ backgroundImage: `url(${project.desktop_img})` }} />
-              <div className="desktop-screen-stand" />
-              <div className="desktop-screen-base" />
-            </div>
-            <div className="mobile-example">
-              <div className="phone-camera" />
-              <div className="phone-screen" style={{ backgroundImage: `url(${project.mobile_img})` }} />
-              <div className="phone-button" />
-            </div>
+            {!!project.desktop_img && (
+              <div className="desktop-example">
+                <div 
+                  className="desktop-screen" 
+                  style={{ backgroundImage: `url(${project.desktop_img})` }} 
+                />
+                <div className="desktop-screen-stand" />
+                <div className="desktop-screen-base" />
+              </div>
+            )}
+            {!!project.mobile_img && (
+              <div 
+                className="mobile-example"
+                style={{
+                  transform: !!project.desktop_img ? 'rotate(10deg)' : 'scale(1.65)',
+                  marginTop: !!project.desktop_img ? 'calc(17.5vw)' : 'calc(14vw)'
+                }}
+              >
+                <div className="phone-camera" />
+                <div 
+                  className="phone-screen" 
+                  style={{ 
+                    backgroundImage: `url(${project.mobile_img})` 
+                  }} 
+                />
+                <div className="phone-button" />
+              </div>
+            )}
           </div>
         </div>
       </a>
