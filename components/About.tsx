@@ -5,7 +5,7 @@ import { trevor } from '@lib/assets';
 
 export default function About() {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <p>I am a maker. There isn&apos;t a medium I have found that I didn&apos;t want to learn everything about. Whether it be designing software or weaving, I want to get my hands on it and create something new. I particularly enjoy finding new ways to use existing materials and software.</p>
 
       <p>Like modifying a crochet pattern normally the size of a teddy bear into a sculpture larger than a car by just changing the type of yarn used.</p>

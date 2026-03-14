@@ -93,7 +93,7 @@ export default function Footer() {
   return (
     <>
       <div className="fade-top" />
-      <footer>
+      <footer id="contact">
         <h2>Let&apos;s Make Some Things</h2>
         <div className="contact-info">
           <h3>get in touch</h3>
