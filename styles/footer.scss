@@ -24,7 +24,7 @@ footer {
 		text-align: center;
 		text-transform: uppercase;
 		line-height: 300%;
-		margin-bottom: 5rem;
+		margin-bottom: 1rem;
 		color: rgb(0, 200, 230);
 
 		@include small-media {
@@ -46,7 +46,7 @@ footer {
 		}
 
 		.phone, .email {
-			font-size: 2.25rem;
+			font-size: 1.75rem;
 			line-height: 200%;
 		}
 
@@ -75,7 +75,7 @@ footer {
 		input, textarea {
 			width: 50%;
 			margin: 1rem 0 1rem 0;
-			font-size: 2rem;
+			font-size: 1.65rem;
 			line-height: 200%;
 			border-radius: 1rem;
 			padding: 0 1.5rem 0 1.5rem;
