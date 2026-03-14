@@ -70,7 +70,4 @@ if (process.env.NODE_ENV === 'production') {
 	});
 }
 
-server.listen(
-	process.env.PORT || 4000,
-	() => console.log(`Server listening on port ${process.env.PORT || 4000}`)
-)
+module.exports = server;
