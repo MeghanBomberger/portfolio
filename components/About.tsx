@@ -15,8 +15,8 @@ export default function About() {
         alt="trevor"
         title="trevor"
         src={trevor}
-        width={30}
-        height={30}
+        width={500}
+        height={600}
       />
 
       <p className="small">Yes, that&apos;s a 7ft tall AT-AT. He was made with more than 2 miles of yarn, a custom pattern tracking program, and stuffed with a mini suspension bridge. My kid named him Trevor (still not sure why). If you want to see Trevor in person, he lives at the Urban Arts Gallery in downtown Salt Lake City, UT along side my much smaller artwork and products.</p>
