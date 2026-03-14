@@ -1,0 +1,13 @@
+export const homeIcon = '/home-icon.svg';
+export const aboutIcon = '/about-icon.svg';
+export const projectsIcon = '/projects-icon.svg';
+export const skillsIcon = '/skills-icon.svg';
+export const contactIcon = '/contact-icon.svg';
+export const resumeIcon = '/resume-icon.svg';
+export const trevor = '/trevor.jpg';
+export const githubIcon = '/github-icon.svg';
+export const linkedinIcon = '/linkedin-icon.svg';
+export const instagramIcon = '/instagram-icon.svg';
+export const facebookIcon = '/facebook-icon.svg';
+export const twitterIcon = '/twitter-icon.svg';
+export const sentIcon = '/send-icon.svg';

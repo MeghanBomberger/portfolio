@@ -1,0 +1,62 @@
+@use './variables' as *;
+
+* {
+  margin: 0;
+  font-size: 10px;
+  z-index: 1;
+  @include font-one;
+  color: $light-text;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.app-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(rgba(16, 16, 42, 0.95), rgba(58, 23, 58, 0.95)), url('/mountains.gif');
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  z-index: 0;  
+}
+
+.app {
+  @include center-v;
+
+  .element {
+    width: 100%;
+  }
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+  
+  h2 {
+    position: sticky;
+    top: 3rem;
+		z-index: 3;
+		width: 100%;
+    @include dark-fade-bar;
+    @include font-two;
+    font-size: 3rem;
+    height: 9rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 250%;
+
+    @include small-media {
+      font-size: 7.5vw;
+      top: 4.75rem;
+    }
+  }
+}

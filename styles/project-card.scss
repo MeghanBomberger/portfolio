@@ -1,0 +1,248 @@
+@import './variables.scss';
+
+.project-card {
+	@include center-h;
+  flex-direction: column;
+	justify-content: space-between;
+  align-items: flex-start;
+	width: 80%;
+
+	@media screen and (max-width: 1000px) {
+		width: 90%;
+	}
+
+	@include desktop-only {
+		margin-bottom: 5vh;
+    flex-direction: row;
+	}
+
+	@include tablet-and-smaller {
+		margin-top: 4rem;
+		padding-bottom: 4rem;
+		border-bottom: $faded-light-text solid 0.15rem;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	a {
+		height: 100%;
+    width: 100%;
+
+		.project-examples {
+      height: 100%;
+      width: 100%;
+			@include center-h;
+			margin: 0 0 4vh 0;
+			filter: drop-shadow(rgba(200, 255, 255, 0.2) 0.1rem 0.1rem 1rem);
+
+      @include desktop-only {
+        width: 50vw;
+      }
+
+			.desktop-example {
+				@include center-v;
+				position: relative;
+				margin: 0 0 0 0;
+				height: calc(27vw);
+        max-height: 270pt;
+				width: 45vw;
+        max-width: 450pt;
+				border-radius: calc(1vw);
+				background-color: black;
+
+				@include tablet-and-smaller {
+					height: calc(42vw);
+					width: 65vw;
+				}
+
+				.desktop-screen {
+					height: calc(25vw);
+          max-height: 250pt;
+					width: 40vw;
+          max-width: 400pt;
+					border-radius: calc(0.5vw);
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: top center;
+
+					@include tablet-and-smaller {
+						height: calc(38vw);
+						width: 62.1vw;
+					}
+				}
+
+				.desktop-screen-stand {
+					position: absolute;
+					bottom: -7%;
+					height: calc(2vw);
+          max-height: 20pt;
+					width: 5vw;
+          max-width: 50pt;
+					background-color: black;
+
+					@include tablet-and-smaller{
+						height: calc(2.89vw);
+						width: 7.22vw;
+						bottom: -7%;
+					}
+				}
+
+				.desktop-screen-base {
+					position: absolute;
+					bottom: -10%;
+					height: calc(1.5vw);
+          max-height: 15pt;
+					width: 10vw;
+          max-width: 100pt;
+					border-radius: 50%;
+					background-color: black;
+
+					@include tablet-and-smaller {
+						height: calc(2.167vw);
+						width: 14.44vw;
+					}
+				}
+			}
+
+			.mobile-example {
+				z-index: 2;
+				display: grid;
+				align-items: center;
+				justify-content: center;
+				grid-template-rows: calc(2vw) auto calc(3vw);
+				margin: calc(17.5vw) 0 0 -8vw;
+				height: calc(21vw);
+        max-height: 210pt;
+				width: 10vw;
+        max-width: 100pt;
+				border-radius: calc(1vw);
+				background-color: black;
+				box-shadow: inset rgba(255, 255, 255, 0.4) 1px 1px 3px;
+
+				@include tablet-and-smaller {
+					height: calc(30.33vw);
+					width: 14.44vw;
+					margin: calc(25vw) 0 0 -8vw;
+				}
+
+				.phone-camera {
+					grid-row: 1;
+					display: flex;
+					align-self: center;
+					justify-self: center;
+					height: calc(1vw);
+          max-height: 10pt;
+					width: 1vw;
+          max-width: 10pt;
+					border-radius: 50%;
+					background-color: $darkest-gray;
+
+					@include tablet-and-smaller {
+						height: calc(1.44vw);
+						width: 1.44vw;
+					}
+				}
+
+				.phone-screen {
+					grid-row: 2;
+					height: calc(16vw);
+          max-height: 160pt;
+					width: 8.5vw;
+          max-width: 85pt;
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+					border-radius: 0.25rem;
+
+					@include tablet-and-smaller {
+						height: calc(23.11vw);
+						width: 13vw;
+					}
+				}
+
+				.phone-button {
+					grid-row: 3;
+					display: flex;
+					align-self: center;
+					justify-self: center;
+					height: calc(2vw);
+          max-height: 20pt;
+					width: 2vw;
+          max-width: 20pt;
+					border-radius: 50%;
+					background-color: $dark-gray;
+
+					@include tablet-and-smaller {
+						height: calc(2.5vw);
+						width: 2.5vw;
+            margin-bottom: calc(0.75vw);
+					}
+				}
+			}
+		}
+	}
+
+	.project-info {
+    width: 100%;
+
+    @include desktop-only {
+      width: 50vw;
+      padding-top: 10vh;
+    }
+
+		a > h3 {
+			margin: 0 7.5% 2rem 7.5%;
+			width: 85%;
+			@include font-two;
+			font-size: 1.5rem;
+			text-align: center;
+			text-transform: uppercase;
+			text-shadow: $darkest-gray 1px 1px 3px;
+
+      @include desktop-only {
+        text-align: center;
+        font-size: 2.25rem;
+      }
+		}
+
+		.project-description {
+			margin: 3rem 10% 5rem 10%;
+			width: 80%;
+			font-size: 1.375rem;
+			text-align: center;
+			line-height: 150%;
+		}
+
+		.skills-used {
+			@include center-h;
+			flex-wrap: wrap;
+			margin: 1rem 1rem 0 1rem;
+
+			.project-skill {
+				margin: 1rem;
+				height: 3rem;
+			}
+		}
+
+		.project-repo {
+			margin-top: 4rem;
+			font-size: 2rem;
+			text-align: center;
+		}
+
+		a { 
+			width: 100%;
+
+			.git-hub-icon {
+				margin: 2rem calc(50% - 2rem) 5rem calc(50% - 2rem);
+				height: 4rem;
+
+				&:last-child {
+					margin: 2rem calc(50% - 2rem) 0 calc(50% - 2rem);
+				}
+			}
+		}
+	}
+}
