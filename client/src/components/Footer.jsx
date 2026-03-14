@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { baseURL } from '../App'
 import './Footer.scss'
 import facebookIcon from '../assets/facebook.svg'
@@ -45,6 +45,8 @@ export default function Footer () {
 	const [confirmation, setConfirmation] = useState(false)
 	const [fade, setFade] = useState(0)
 	const [error, setError] = useState("")
+
+  console.error("ERROR MESSAGE: ", error) // TODO: temporary console log to suppress unused variable warning for error state. Will be used in future update to display error message to user if message fails to send.
 
 	const handleSubmit = (e) => {
 		e.preventDefault()

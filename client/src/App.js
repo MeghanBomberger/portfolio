@@ -17,6 +17,8 @@ export default function App () {
   const [contributorProjects, setContributorProjects] = useState([])
   const [skills, setSkills] = useState([])
 
+  console.info("message: ", message) // TODO: temporary console log to suppress unused variable warning for error state. Will be used in future update to display error message to user if message fails to send.
+
   useEffect(() => {
     axios.get(`${baseURL}/projects`)
       .then(res => {
