@@ -65,17 +65,21 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             />
           ))}
         </div>
-        <p className="project-repo">Checkout out the repo</p>
-        <a href={project.repo}>
-          <Image
-            alt="github-repo"
-            className="git-hub-icon"
-            src={githubIcon}
-            title="GitHub repo"
-            width={iconSize}
-            height={iconSize}
-          />
-        </a>
+        {project.repo && (
+          <>
+            <p className="project-repo">Checkout out the repo</p>
+            <a href={project.repo}>
+              <Image
+                alt="github-repo"
+                className="git-hub-icon"
+                src={githubIcon}
+                title="GitHub repo"
+                width={iconSize}
+                height={iconSize}
+              />
+            </a>
+          </>
+        )}
       </div>
 
     </article>
