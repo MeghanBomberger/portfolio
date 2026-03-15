@@ -167,18 +167,23 @@
 					display: flex;
 					align-self: center;
 					justify-self: center;
-					height: calc(2vw);
-          max-height: 20pt;
-					width: 2vw;
-          max-width: 20pt;
+					height: calc(1.5vw);
+					width: 1.5vw;
 					border-radius: 50%;
 					background-color: $dark-gray;
+          margin-bottom: calc(0.75vw);
 
 					@include tablet-and-smaller {
 						height: calc(2.5vw);
 						width: 2.5vw;
             margin-bottom: calc(0.75vw);
 					}
+
+          @include desktop-only {
+            height: calc(0.65vw);
+            width: 0.65vw;
+            margin-bottom: calc(1.95vw);
+          }
 				}
 			}
 		}
