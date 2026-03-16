@@ -31,7 +31,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 className="mobile-example"
                 style={{
                   transform: !!project.desktop_img ? 'rotate(10deg)' : 'scale(1.65)',
-                  marginTop: !!project.desktop_img ? 'calc(17.5vw)' : 'calc(14vw)'
+                  marginTop: !!project.desktop_img ? 'calc(17.5vw)' : 'calc(14vw)',
+                  marginBottom: !project.desktop_img ? 'calc(17.5vw)' : '0'
                 }}
               >
                 <div className="phone-camera" />
